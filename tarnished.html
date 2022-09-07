@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Tarnished of Elden Ring</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="./tarnished.js"></script>
+    </head>
+    <body>
+        <h1>Behold, The Tarnished of The Lands Between</h1>
+        <label for="tarnished">View bio for:</label>
+        <select name="Tarnished" id="tarnished" onchange="changeTable(this.value)">
+            <option>Choose Tarnished</option>
+            <option value="1" id="1">Ensha</option>
+            <option value="2" id="2">Alberich</option>
+            <option value="3" id="3">Anastasia</option>
+            <option value="4" id="4">Nerijus</option>
+        </select>
+    </body>
+    <div>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Title</th>
+                <th>Faction</th>
+                <th>Alignment</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td id="name"></td>
+                <td id="title"></td>
+                <td id="faction"></td>
+                <td id="alignment"></td>
+                <td id="description"></td>
+            </tr>
+        </table>
+    </div>
+</html>
